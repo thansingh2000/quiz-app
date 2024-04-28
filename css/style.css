@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color: blue;
+}
+.start_btn,
+.infoBoxMain,
+.quizBox,
+.resultBox{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.rightAns{
+    background-color: green;
+    color:white;
+}
+.wrongAns{
+    background-color: red;
+    color:white;
+}
+.startBtn{
+    background-color: aliceblue;
+    padding:30px 80px;
+    border:none;
+    font-size:40px;
+    border-radius: 10px;
+    color:blue;
+    font-weight:800;
+   cursor: pointer;
+
+}
+.startBtn:hover{
+    background-color: darkgray;
+    color:blue;
+}
+
+/*end-btn start quiz*/
+
+.infoBox{
+    background-color:white;
+    border-radius: 10px;
+    transition:  background-color 1.5s ease;
+    display: none;
+    
+}
+.infoBox header{
+    font-size:30px;
+    padding:10px 20px;
+    box-shadow: 0px 0px 20px 0px gray;
+    color:blue;
+    font-weight: 800;
+
+
+}
+.infoBox .infoContent{
+    padding:20px 20px;
+    line-height: 2.0;
+    font-size:20px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+}
+.infoBtn,.resultBtn{
+    padding:20px;
+    display:flex;
+    justify-content: flex-end; 
+    justify-content:space-between;  
+   
+}
+.infoBtn button,.resultBtn button{
+    background-color: blue;
+    color:white;
+    border:none;
+    padding:10px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.infoBtn button:last-child{
+    background-color: green;
+}
+.infoBtn button:last-child:hover{
+    background-color: white;
+    color: blue;
+    border:1px solid blue;
+
+}
+.infoBtn button:hover{
+    background-color: white;
+    color: blue;
+    border:1px solid blue;
+}
+
+/*----end-info=--box---*/
+.quizBox{
+    background-color: white;
+    border-radius: 8px;
+    display:none;
+}
+.question span{
+    font-size:30px;
+    font-weight:600;
+}
+.quizHeader{
+    font-size:30px;
+    display:flex;
+    justify-content: space-between;
+    padding:20px 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+    font-weight:600;
+    color:blue;
+
+    
+}
+.quizHeader span:last-child{
+    display:flex;
+    margin:0px 15px;
+    background-color:aquamarine;
+    padding:5px 8px;
+    font-size:20px;
+    border-radius: 8px;
+    font-weight:600;
+}
+.questionArea{
+    padding:20px;
+    font-size: 25px;
+    border-bottom: 1px solid gray;  
+}
+.optionBox{
+    border:1px solid rgb(3, 179, 179);
+    padding:10px;
+    margin:10px 0px;
+    border-radius: 30px;  
+
+}
+.optionBox:hover{
+    background-color:rgb(3, 179, 179);
+    color:white;
+    cursor:pointer;
+}
+.qFoot{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:10px;
+    padding:20px 0px;
+}
+.qFoot span{
+    display:flex;
+}
+.qFoot span p{
+    padding:0px 10px;
+    font-weight: 600;
+    font-size:25px;
+    color:blue;
+}
+.qFoot button{
+    background-color:blue;
+    padding:10px 30px;
+    border:none;
+    color:white;
+    font-size:20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.resultBox h2{
+    font-size:40px;
+    color:blue;
+    text-decoration: underline;
+}
+.resultBox{
+    background-color:white;
+    padding:30px;
+    border-radius: 8px;
+    text-align:center;
+    display:none;
+   
+}
+.rewardText{
+    font-size:35px;
+    font-weight: 600;
+}
+.rewardText p{
+    color:blue;
+    font-weight: 600;
+
+}
